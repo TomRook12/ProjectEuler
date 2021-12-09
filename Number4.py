@@ -9,5 +9,5 @@ for a in range(100, 1000):
         if num == num[::-1]:
             palindromelist.append(num)
 
-'''palindromelist = [int(i) for i in palindromelist]'''
+palindromelist = [int(i) for i in palindromelist]
 print(max(palindromelist))
