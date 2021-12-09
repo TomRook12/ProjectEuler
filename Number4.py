@@ -11,7 +11,6 @@ for a in range(100, 1000):
         chop1 = num[:len(num) // 2]
         chop2 = num[len(num) // 2:]
         if chop1 == chop2[::-1]:
-            print("Palindrome: ",a ,"x",b ,"=" ,num)
             palindromelist.append(num)
 
 print(max(palindromelist))
