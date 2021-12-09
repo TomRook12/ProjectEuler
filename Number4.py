@@ -1,30 +1,17 @@
 '''Hardest, a function to recognise a palindrome,
 Start with code example, 91*99= 9009'''
 
-x = "9009"
+chop1 = ""
+chop2 = ""
+palindromelist = []
 
-mylist = [i in range(10,99)]
-print(mylist)
+for a in range(100, 1000):
+    for b in range(100, 1000):
+        num = (str(a * b))
+        chop1 = num[:len(num) // 2]
+        chop2 = num[len(num) // 2:]
+        if chop1 == chop2[::-1]:
+            print("Palindrome: ",a ,"x",b ,"=" ,num)
+            palindromelist.append(num)
 
-palindrome = False
-test = ''
-
-while chop1 != chop2:
-    for i in range(10,99):
-        test = str(i*i)
-        chop1 = test[:len(test)//2]
-        chop2 = test[len(test)//2:]
-        if chop1 == chop2:
-            print(test)
-            print("Palindrome")
-        else:
-            continue
-
-
-'''if x[0] == x[-1]:
-    if x[1] == x[-2]:
-        palindrome = True
-        print("PALINDROME")
-'''
-
-s = "string"
+print(max(palindromelist))
