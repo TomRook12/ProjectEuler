@@ -3,7 +3,7 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 x = 0
 
-for a in range (0, 1000000000000000):
+for a in range (0, 1000000000):
     x = 0
     for b in range(1, 21):
         if a % b == 0:
